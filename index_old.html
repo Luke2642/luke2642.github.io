@@ -10,7 +10,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            line-height: 1.6;
         }
         header {
             text-align: center;
@@ -19,94 +18,66 @@
         }
         header h1 {
             margin: 0;
-            font-size: 28px;
-            color: #333;
+            font-size: 24px;
         }
         .container {
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px 0;
         }
         .top-images {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 40px;
-            gap: 2%;
+            margin-bottom: 20px;
+        }
+        .top-images img {
+            width: 32%;
+            height: auto;
+        }
+        .top-images img.mobile {
+            width: 100%;
         }
         .top-images video {
             width: 32%;
             height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         .overview {
             text-align: center;
             margin-bottom: 40px;
-            padding: 0 20px;
-        }
-        .overview p {
-            font-size: 18px;
-            color: #555;
-            max-width: 800px;
-            margin: 0 auto;
         }
         .projects {
             display: flex;
             flex-direction: column;
-            gap: 20px;
         }
         .project {
             display: flex;
-            align-items: flex-start;
-            background: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            gap: 20px;
+            align-items: center;
+            margin-bottom: 20px;
         }
         .project img {
-            width: 200px;
+            width: 150px;
             height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            flex-shrink: 0;
+            margin-right: 20px;
         }
         .project div {
-            max-width: 800px;
-            flex-grow: 1;
-        }
-        .project h2 {
-            font-size: 22px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .project p {
-            font-size: 16px;
-            color: #555;
-            line-height: 1.5;
+            max-width: 600px;
         }
         @media (max-width: 768px) {
             .top-images {
                 flex-direction: column;
-                gap: 20px;
             }
-            .top-images video {
+            .top-images img {
                 width: 100%;
                 margin-bottom: 10px;
             }
             .project {
                 flex-direction: column;
-                align-items: center;
-                text-align: center;
+                align-items: flex-start;
             }
             .project img {
                 width: 100%;
                 margin-right: 0;
                 margin-bottom: 10px;
-            }
-            .project div {
-                max-width: none;
             }
         }
     </style>
@@ -119,18 +90,20 @@
     </header>
     <div class="container">
         <div class="top-images">
+        <video autoplay loop muted>
+          <source src="circle_guitar.mp4" type="video/mp4">
+          <img src="circle_guitar.jpg" alt="Circle Guitar">
+        </video>
+        <video autoplay loop muted>
+          <source src="go_eve_model.mp4" type="video/mp4">
+          <img src="go_eve_model.jpg" alt="Electric Vehicle Exhibition Demonstration Model">
+        </video>
             <video autoplay loop muted>
-                <source src="circle_guitar.mp4" type="video/mp4">
-                <img src="circle_guitar.jpg" alt="Circle Guitar">
-            </video>
-            <video autoplay loop muted>
-                <source src="go_eve_model.mp4" type="video/mp4">
-                <img src="go_eve_model.jpg" alt="Electric Vehicle Exhibition Demonstration Model">
-            </video>
-            <video autoplay loop muted>
-                <source src="360_3D_reconstruction_cameras.mp4" type="video/mp4">
-                <img src="360_3D_reconstruction_cameras.jpg" alt="Camera Rack for shooting Fashion Photography focal length at close distance">
-            </video>
+          <source src="360_3D_reconstruction_cameras.mp4" type="video/mp4">
+          <img src="360_3D_reconstruction_cameras.jpg" alt="Camera Rack for shooting Fashion Photography focal length at close distance">
+        </video>
+            
+            
         </div>
         <div class="overview">
             <p>I specialize in advanced prototyping and model fabrication, creating innovative solutions and cutting-edge models for a variety of industries. Below you will find a selection of my recent projects showcasing my work in exhibition models, musical instruments, and high-tech photography equipment.</p>
